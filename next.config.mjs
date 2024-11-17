@@ -1,12 +1,7 @@
-const isProd = process.env.NODE_ENV === 'production';
-const nextConfig = {
-  reactStrictMode: true,
-  images: {
-    unoptimized: true, // Disable default image optimization
-  },
-  assetPrefix: isProd ? '/whatbytes/' : '',
-  basePath: isProd ? '/whatbytes' : '',
-  output: 'export'
-};
-
-export default nextConfig;
+module.exports = {
+    basePath: '/whatbytes',
+    assetPrefix: '/whatbytes/',
+  
+    // Optional: you can also add exportPathMap if you have dynamic routes
+  };
+  
