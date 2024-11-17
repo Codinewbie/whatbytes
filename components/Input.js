@@ -108,7 +108,7 @@ export default function Input({ setIsPopupOpen, formData, setFormData }) {
                 name="score"
                 value={localScore}
                 min="0"
-                max="10"
+                max="15"
                 onChange={handleChange}
                 className={`min-w-36 p-1 flex justify-center items-center border ${localScore === '' ? "border-red-500": ""} rounded-lg`}
               />
