@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react';
+import dynamic from 'next/dynamic';
 const Header = dynamic(() => import('@/components/Header'), { ssr: false });
 const Skill = dynamic(() => import('@/components/Skill'), { ssr: false });
 const Syllabus = dynamic(() => import('@/components/Syllabus'), { ssr: false });
