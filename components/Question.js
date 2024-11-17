@@ -1,3 +1,4 @@
+import dynamic from 'next/dynamic';
 const DoughnutChart = dynamic(() => import('./DoughnutChart'), { ssr: false });
 
 export default function Question({formData}) {

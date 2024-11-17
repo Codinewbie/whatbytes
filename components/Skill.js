@@ -1,3 +1,4 @@
+import dynamic from 'next/dynamic';
 const QuickBox = dynamic(() => import('./QuickBox'), { ssr: false });
 const HtmlBox = dynamic(() => import('./HtmlBox'), { ssr: false });
 const Graph = dynamic(() => import('./Graph'), { ssr: false });
