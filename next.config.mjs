@@ -1,7 +1,5 @@
-module.exports = {
-    basePath: '/whatbytes',
+export default {
+    basePath: '/whatbytes',  // Your GitHub repo name
     assetPrefix: '/whatbytes/',
-  
-    // Optional: you can also add exportPathMap if you have dynamic routes
   };
   
