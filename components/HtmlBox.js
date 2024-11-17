@@ -5,6 +5,7 @@ const Input = dynamic(() => import('./Input'), { ssr: false });
 
 export default function HtmlBox({formData,setFormData}) {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [date, setDate] = useState("17 Nov 2024");
 
   const handleUpdateClick = () => {
     setIsPopupOpen(true);
@@ -36,7 +37,7 @@ export default function HtmlBox({formData,setFormData}) {
         <div className="flex flex-col space-y-1">
           <div className="text-sm font-bold">Hyper Text Markup Language</div>
           <div className="text-xs text-gray-500 font-medium">
-            Questions: 15 | Duration: 15 mins | Submitted on 17 Nov 2024
+            Questions: 15 | Duration: 15 mins | Submitted on {date}
           </div>
         </div>
         <button
@@ -49,7 +50,7 @@ export default function HtmlBox({formData,setFormData}) {
 
       {/* Popup Input Form */}
       {isPopupOpen && (
-        <Input setIsPopupOpen={setIsPopupOpen} formData={formData}  setFormData={setFormData} />
+        <Input setIsPopupOpen={setIsPopupOpen} formData={formData} setDate={setDate}  setFormData={setFormData} />
       )}
     </div>
   );

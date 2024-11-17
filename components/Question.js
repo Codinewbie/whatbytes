@@ -14,7 +14,7 @@ export default function Question({formData}) {
                 {formData.score <= 5 && " Keep practicing! Focus on areas that need improvement."}
                 {formData.score >= 6 && formData.score <= 10 && " Good job! Keep up the effort to reach even higher."}
                 {formData.score >= 11 && formData.score <= 14 && " Great work! Just a bit more effort to perfect your score."}
-                {formData.score === 15 && " Excellent work! You aced the test!"}
+                {formData.score == 15 && " Excellent work! You aced the test!"}
             </div>
    
             <div className="flex items-center justify-center  mt-4 text-4xl">

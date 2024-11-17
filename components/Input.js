@@ -1,11 +1,13 @@
 'use client';
 import { useState, useEffect } from 'react';
 
-export default function Input({ setIsPopupOpen, formData, setFormData }) {
+export default function Input({ setIsPopupOpen, formData ,setDate, setFormData }) {
   // Store input values in local state
   const [localRank, setLocalRank] = useState(formData.rank);
   const [localPercentile, setLocalPercentile] = useState(formData.percentile);
   const [localScore, setLocalScore] = useState(formData.score);
+
+  const months = ["Jan" , "Feb" , "Mar" , "Apr" , "May" , "Jun" , "Jul", "Aug" , "Sep" , "Oct" , "Nov" ,"Dec"];
 
   useEffect(() => {
     // Update the local values if formData changes from outside
@@ -38,6 +40,12 @@ export default function Input({ setIsPopupOpen, formData, setFormData }) {
       score: localScore,
     });
     // Close the popup after saving
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = today.getMonth(); // Adding 1 because months are 0-based
+    const day = today.getDate();
+    const date = `${day} ${months[month]} ${year}`;
+    setDate(date);
     setIsPopupOpen(false);
   };
 

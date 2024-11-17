@@ -15,13 +15,13 @@ export default function Header() {
             <div className = "text-2xl flex items-center justify-center mb-1 font-bold"> WhatBytes</div>
         </div>
         
-        <div className="border flex justify-start items-center rounded-md border-2 space-x-2 m-3 p-1">
-            <div className="h-8 w-8 bg-gray-100 border z-20 text-center flex justify-center items-center rounded-full overflow-hidden">
+        <div className="border flex justify-start items-center rounded-md px-2 border-2 space-x-2 m-3 p-1">
+            <div className="h-8 w-8 bg-gray-100 border z-20 text-center flex justify-center  items-center rounded-full overflow-hidden">
                 <Image
                     src="/images/aman2.jpg" // Path relative to the public folder
                     alt="aman image"
-                    width={30}
-                    height={30}
+                    width={40}
+                    height={40}
                     className="object-cover rounded-full"
                 />
             </div>
