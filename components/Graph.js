@@ -23,20 +23,3 @@ export default function Graph({formData}) {
     </div>
     );
   }
-  
-
-//   <div id="1" className = "grid lg:grid-cols-9 grid-cols-6 gap-8">
-//   <div className = "col-span-2 lg:col-span-2 h-full border-r-2"> 
-//     <Sidebar/>
-//   </div>
-//   <div id="set" className ="lg:col-span-7 col-span-4 grid grid-cols-7 gap-4">
-//     <div id="2"className = "lg:col-span-4 col-span-7  min-h-screen ">
-//       <Skill formData ={formData}  setFormData={setFormData}/>
-//     </div>
-//     <div id = "3"className = "lg:col-span-3 col-span-7  flex flex-col  py-4 space-y-4 min-h-screen">
-//       <div className ="lg:h-10 h-0"></div>
-//       <Syllabus/>
-//       <Question formData={formData}/>
-//     </div>
-//   </div>
-//  </div>
