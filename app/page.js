@@ -1,11 +1,17 @@
 'use client';
 import React, { useState } from 'react';
-
 import Header from "@/components/Header";
 import Question from "@/components/Question";
 import Sidebar from "@/components/Sidebar";
 import Skill from "@/components/Skill";
 import Syllabus from "@/components/Syllabus";
+
+import dynamic from 'next/dynamic'
+ 
+const DynamicComponentWithNoSSR = dynamic(
+  () => import('../components/BrowserOnlyComponent'),
+  { ssr: false }
+)
 
 export default function Home() {
     const [formData, setFormData] = useState({ rank: '1', percentile: '30', score: '10' });
@@ -45,6 +51,7 @@ export default function Home() {
                     )}
                 </div>
             </div>
+            <DynamicComponentWithNoSSR />
         </div>
     );
 }
