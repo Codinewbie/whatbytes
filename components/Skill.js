@@ -1,6 +1,7 @@
-import Graph from "./Graph";
-import HtmlBox from "./HtmlBox";
-import QuickBox from "./QuickBox";
+const QuickBox = dynamic(() => import('./QuickBox'), { ssr: false });
+const HtmlBox = dynamic(() => import('./HtmlBox'), { ssr: false });
+const Graph = dynamic(() => import('./Graph'), { ssr: false });
+
 
 export default function Skill({formData,setFormData}) {
     return (

@@ -1,12 +1,10 @@
 'use client';
 import React, { useState } from 'react';
-import Header from "@/components/Header";
-import Question from "@/components/Question";
-import Sidebar from "@/components/Sidebar";
-import Skill from "@/components/Skill";
-import Syllabus from "@/components/Syllabus";
-
-
+const Header = dynamic(() => import('@/components/Header'), { ssr: false });
+const Skill = dynamic(() => import('@/components/Skill'), { ssr: false });
+const Syllabus = dynamic(() => import('@/components/Syllabus'), { ssr: false });
+const Question = dynamic(() => import('@/components/Question'), { ssr: false });
+const Sidebar = dynamic(() => import('@/components/Sidebar'), { ssr: false });
 
 export default function Home() {
     const [formData, setFormData] = useState({ rank: '1', percentile: '30', score: '10' });

@@ -1,4 +1,4 @@
-import DoughnutChart from "./DoughnutChart";
+const DoughnutChart = dynamic(() => import('./DoughnutChart'), { ssr: false });
 
 export default function Question({formData}) {
     return (

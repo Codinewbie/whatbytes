@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
-import Input from './Input';
+const Input = dynamic(() => import('./Input'), { ssr: false });
+
 export default function HtmlBox({formData,setFormData}) {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
