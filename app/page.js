@@ -29,10 +29,10 @@ export default function Home() {
                     )}
                     {activeTab === 1 && (
                       <div id="set" className="lg:col-span-9 md:col-span-7 sm:col-span-5 col-span-7 grid lg:grid-cols-9 md:grid-cols-7 sm:grid-cols-5 grid-cols-7 gap-4 px-4 sm:px-1">
-                        <div className="lg:col-span-5 md:col-span-7 sm:col-span-5 col-span-7 min-h-screen">
+                        <div className="lg:col-span-5 md:col-span-7 sm:col-span-5 col-span-7">
                             <Skill formData={formData} setFormData={setFormData} />
                         </div>
-                        <div className="lg:col-span-4 md:col-span-7 sm:col-span-5  col-span-7 flex flex-col py-4  space-y-4 min-h-screen">
+                        <div className="lg:col-span-4 md:col-span-7 sm:col-span-5  col-span-7 flex flex-col py-4  space-y-4">
                             <div className = "lg:h-10"></div>
                             <Syllabus />
                             <Question formData={formData} />
