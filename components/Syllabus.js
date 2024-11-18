@@ -1,7 +1,7 @@
 
 export default function Syllabus() {
     return (
-     <div className ="flex  rounded-lg  border" >
+     <div className ="flex rounded-lg  border" >
         <div className=" p-6 gap-2 flex w-full flex-col">
             <div className =" pb-3 items-center flex w-full rounded-lg font-bold text-sm"> Syllabus Wise Analysis</div>
             <div className ="h-15  py-3 justify-center flex-col flex w-full rounded-lg">
